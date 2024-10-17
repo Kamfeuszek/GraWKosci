@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -19,13 +20,17 @@
             android:layout_height="wrap_content"
             android:text="Gra w kości. Autor: Kamil Florczak"
             android:textAlignment="center"
+            android:background="@color/design_default_color_error"
+            android:textColor="@color/white"
             android:textSize="24dp"/>
 
         <Button
             android:id="@+id/throwDice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RZUĆ KOŚĆMI" />
+            android:textColor="@color/white"
+            android:text="RZUĆ KOŚĆMI"
+            app:cornerRadius="0px"/>
 
         <GridLayout
             android:layout_width="match_parent"
@@ -38,6 +43,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:text=" ? "
                 android:textSize="45dp"/>
 
@@ -46,6 +52,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:text=" ? "
                 android:textSize="45dp"/>
 
@@ -54,6 +61,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:text=" ? "
                 android:textSize="45dp"/>
 
@@ -62,6 +70,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:text=" ? "
                 android:textSize="45dp"/>
 
@@ -70,6 +79,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:text=" ? "
                 android:textSize="45dp"/>
         </GridLayout>
@@ -77,21 +87,26 @@
             android:id="@+id/rollResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Wynik tego losowania: " />
         <TextView
             android:id="@+id/gameResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Wynik gry: " />
         <TextView
             android:id="@+id/throwCount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Liczba rzutów: 0" />
         <Button
             android:id="@+id/resetButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RESETUJ WYNIK" />
+            android:textColor="@color/white"
+            android:text="RESETUJ WYNIK"
+            app:cornerRadius="0px"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
