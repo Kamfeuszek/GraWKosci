@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         gameResultCounter = 0;
         throwCounter = 0;
         rollResult.setText("Wynik tego losowania: " + rollResultCounter);
-        gameResult.setText("Wynik gry: " + gameResultCounter);
+        updateScore(gameResultCounter);
         throwCount.setText("Liczba rzutów: " + throwCounter);
     }
     public void updateScore(int newScore) {
